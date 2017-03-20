@@ -17,6 +17,9 @@ public class VendingMachine {
     public void start() {
 
 
+        System.out.println("change");
+
+
 
         //Available Drinks
         int numberOfDrinks=3;
