@@ -15,12 +15,13 @@ public class Evaluations {
     //Evaluate Insert Choice
     public static int getChoice(int numberOfChoices) {
 
-        Scanner userInput = new Scanner(System.in);
+
         int choice = -1;
 
         do {
 
             try{
+                Scanner userInput = new Scanner(System.in);
                 choice=userInput.nextInt();
 
 
@@ -35,7 +36,8 @@ public class Evaluations {
 
             }
             catch (InputMismatchException e){
-                System.out.println("error");
+                System.out.println("Please choose products from the list");
+                continue;
             }
         }while(choice >numberOfChoices||choice<1);
 
